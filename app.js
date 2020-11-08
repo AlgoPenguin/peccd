@@ -1,0 +1,18 @@
+
+
+vm = new Vue({
+    el: "#app",
+    data() {
+      return {
+        colleges: colleges_json,
+        goals: [],
+        enteredValue: ''
+      };
+    },
+    methods: {
+      addGoal() {
+        this.goals.push(this.enteredValue);
+        this.enteredValue = '';
+      }
+    }
+  });
