@@ -1,0 +1,266 @@
+college-card {
+    display: flex;
+    flex-direction: column;
+    height: 374px;
+    width: 329px;
+    border: solid 0.2px #444444;
+    box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+    position: relative;
+}
+
+college-header{
+    padding: 10px;
+    flex: 2;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: round;
+    background-image: url(https://images.collegedunia.com/public/college_data/images/appImage/1521444819cvrimge.png);
+}
+
+promoted-tag {
+    position: absolute;
+    right: 0px;
+    top: -13px;
+    background-color: #68a7ff;
+    padding: 4px 15px;
+    color: white;
+    font-size: smaller;
+    z-index: 1;
+}
+
+promoted-tag::before {
+    position: absolute;
+    width: 0;
+    left: -22px;
+    top: 0px;
+    content: '';
+    border-top: 13px solid #68a7ff;
+    border-left: 23px solid transparent;
+    border-bottom: 16px solid #68a7ff;
+    border-right: 4px solid #68a7ff;
+
+}
+
+college-header > div {
+    position: absolute;
+}
+
+rating{
+    top: 15px;
+    background-color: #f5a626;
+    color: white;
+    padding: 4px;
+    right: 5px;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+rating-no > :first-child{
+    font-size: 20px;
+}
+
+tag-container{
+    bottom: 6px;
+    color: #444444;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+tag {
+    background-color: white;
+    padding: 1% 5%;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+ranking-text{
+    bottom: 6px;
+    right: 0;
+    width: 36%;
+    padding: 0 4px 0 0;
+    font-size: 11px;
+    font-weight: 800;
+    color: white;
+}
+
+college-info {
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 3%;
+    color: #444444;
+    padding: 6px 3%;
+}
+
+college-info > div {
+    flex: 1;
+}
+
+college-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+college-name {
+    font-size: 18.5px;
+    font-weight: 700;
+}
+
+college-fees {
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+college-fees > span {
+    background-color: #dd1c26;
+    color: white;
+    padding: 1px 2px;
+    margin-left: 9px;
+    position: relative;
+}
+
+college-fees > span::before {
+    content: '';
+    position: absolute;
+    right: 19px;
+    position: absolute;
+    border-top: 11px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 10px solid #dd1c26;
+}
+
+college-knowhows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nearest-places {
+    font-size: 13px;
+    font-weight: 500;
+    width: 66%;
+}
+
+discounted-fee {
+    font-size: 28.5px;
+    font-weight: bold;
+    white-space: pre;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+discounted-fee > sub {
+    font-size: 8px;
+    font-weight: 500;
+    color: #444444;;
+}
+
+famous-nearest-places {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 0;
+    color: #adadad;
+}
+
+offer-text {
+    padding: 1% 0% 3% 3%;
+    font-size: 13px;
+    border-radius: 0px 20px 20px 0;
+    position: relative;
+    left: -3%;
+    background-color: #ccf5e7;
+}
+
+amenties {
+    color:#37b396;
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+@
+
+    promoted-tag {
+        right: -1px;
+    }
+
+    rating {
+        padding: 5px 12px;
+        top: 21px;
+        right: 8px;
+        font-size: 13px;
+    }
+
+    tag-container {
+        width: 290px;
+    }
+
+    tag {
+        font-size: 13.5px;
+        font-weight: 500;
+        padding: 8px 10px;
+        border-radius: 16.5px;
+    }
+
+    ranking-text {
+        font-size: 13.5px;
+        font-weight: 500;
+        bottom: 11px;
+    }
+
+    college-header{
+        flex: 2;
+    }
+
+    college-info {
+        flex: 1;
+        padding: 2% 3%;
+    }
+
+    college-fees {
+        font-size: 11px;
+    }
+
+    discounted-fee > sub {
+        font-size: 11px;
+    }
+
+    college-fees > span::before {
+        right: 16px;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-right: 8px solid #dd1c26;
+    }
+
+    famous-nearest-places {
+        font-size: 13px;
+    }
+
+    offer-text{
+        max-width: 335px;
+        padding: 8px 16px;
+        font-weight: 700;
+    }
+
+    college-extra-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    amenties {
+        width: 172px;
+    }
+}
